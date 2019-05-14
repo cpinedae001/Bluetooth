@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDirVoz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:text="Dirección por voz" />
+
+    <TextView
+        android:id="@+id/tvDirScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignTop="@+id/tvDirVoz"
+        android:layout_marginEnd="34dp"
+        android:text="Dirección por Boton" />
+
+    <Button
+        android:id="@+id/btnPorvoz "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="57dp"
+        android:onClick="voz"
+        android:text="Voz" />
+
+    <Button
+        android:id="@+id/btnScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnPorvoz "
+        android:layout_marginEnd="60dp"
+        android:onClick="control"
+        android:text="Control" />
+
+    <Button
+        android:id="@+id/btnBlueTooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:onClick="habilitarBlue"
+        android:text="BlueTooth" />
+
+</RelativeLayout>
